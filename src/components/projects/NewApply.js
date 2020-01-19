@@ -32,7 +32,7 @@ const NewProject = () => {
         </button>
       <form className="form-new-project"
         onSumbmit={onSubmitApply}>
-        <input type="text" type="text" className="input-text" placeholder="Nombre Empresa" name="name" value={name}
+        <input type="text" className="input-text" placeholder="Nombre Empresa" name="name" value={name}
           onChange={onChangeProject} />
         <input type="submit" className="btn btn-block btn-primary" value="Añadir solicitud nueva" />
       </form>
