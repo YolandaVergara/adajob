@@ -1,6 +1,8 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import Header from '../Header';
+import ListApplys from '../tasks/ListApplys';
+
 
 const Applys = () => {
   return (
@@ -9,7 +11,8 @@ const Applys = () => {
       <div className="section-principal">
         <Header />
         <main>
-          <div className="container-taskss">
+          <div className="container-tasks">
+            <ListApplys />
 
           </div>
         </main>

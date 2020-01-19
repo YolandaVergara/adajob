@@ -4,9 +4,9 @@ import Apply from './Apply';
 const List = () => {
 
     const projects = [
-        { name: 'Liquid' },
-        { name: 'Accenture' },
-        { name: 'Redradit' }
+        { name: 'Empresa 1' },
+        { name: 'Empresa 2' },
+        { name: 'Empresa 3' }
     ]
     return (
         <ul className="applys-list">
