@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Login from './auth/Login';
-import NewAccount from './auth/NewAccount';
+import Login from './projects/auth/Login';
+import NewAccount from './projects/auth/NewAccount';
 import Applys from './projects/Applys';
 import ProjectState from '../context/projects/projectState';
 

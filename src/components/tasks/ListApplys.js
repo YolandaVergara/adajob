@@ -58,6 +58,10 @@ const ListApplys = () => {
         }
 
       </Table>
+      {/* <button
+        type="button"
+        className="btn btn-delete"
+      >Eliminar solicitud</button> */}
 
     </Fragment>
 
