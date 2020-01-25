@@ -1,10 +1,10 @@
 import React, { Fragment, useState, useContext } from "react";
-import ProjectContext from "../../context/applies/applyContext";
+import ApplyContext from "../../../context/sidebar/applyContext";
 
 const NewApply = () => {
   //Obtener el state
-  const projectContext = useContext(ProjectContext);
-  const { form, showForm, addApply } = projectContext;
+  const applyContext = useContext(ApplyContext);
+  const { form, showForm, addApply } = applyContext;
 
   //State para las solicitues
   const [apply, saveApply] = useState({

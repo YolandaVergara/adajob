@@ -21,7 +21,7 @@ code {
   --textFont:  'Roboto', sans-serif;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 } 
 html {
   box-sizing: border-box;

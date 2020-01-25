@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
 import uuid from 'uuid';
 import applyContext from './applyContext';
-import projectReducer from './applyReducer';
+import applyReducer from './applyReducer';
 import {
   FORM_APPLY,
   GET_APPLIES,
@@ -25,7 +25,7 @@ const ApplyState = props => {
     form: false
   }
   //dispatch para ejecutar las acciones
-  const [state, dispatch] = useReducer(projectReducer, initialState);
+  const [state, dispatch] = useReducer(applyReducer, initialState);
   
   //Funciones para el CRUD
   const showForm = () => {

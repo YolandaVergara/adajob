@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
-import EditApply from './EditApply';
-import Table from 'react-bootstrap/Table'
+import DetailApply from './DetailApply';
 
 
 const DetailApplies = () => {
@@ -12,6 +11,7 @@ const DetailApplies = () => {
       contactPath: 'Medio de contacto',
       message: 'Mensaje enviado',
       notes: 'Notas',
+      state: true
     },
     {
       name: 'Empresa 1',
@@ -20,6 +20,7 @@ const DetailApplies = () => {
       contactPath: 'Linkedin',
       message: 'Quiero trabajar con vosotros!',
       notes: 'Me llamarán pronto',
+      state: true
     },
     {
       name: 'Empresa 2',
@@ -28,6 +29,7 @@ const DetailApplies = () => {
       contactPath: 'Mail',
       message: 'Quiero trabajar con vosotros!',
       notes: 'Me llamarán pronto',
+      state: false
     },
     {
       name: 'Empresa 3',
@@ -36,28 +38,27 @@ const DetailApplies = () => {
       contactPath: 'Teléfono',
       message: 'Quiero trabajar con vosotros!',
       notes: 'Me llamarán pronto',
+      state: true
     },
 
   ]
   return (
     <Fragment>
       <h1 className="p-5">Detalle de solicitudes</h1>
-      <Table striped className="justify-content-center font">
-
-
-        {applies.length === 0
-          ? (<th>No hay solicitudes</th>)
-          :
-          applies.map(apply => (
-            <tr>
-              <EditApply
+      <h2>Proyecto: </h2>
+      <div className="input-group bg-light d-flex rounded m-5 p-3 w-75 flex-column">
+        <ul>
+          {applies.lenght === 0
+            ? (<li className="task">No hay tareas</li>)
+            : applies.map((apply, key) => (
+              <DetailApply
+                key={key}
                 apply={apply}
               />
-            </tr>
-          ))
-        }
-
-      </Table>
+            ))
+          }
+        </ul>
+      </div>
       {/* <button
         type="button"
         className="btn btn-delete"

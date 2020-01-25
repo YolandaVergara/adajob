@@ -1,7 +1,7 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-import Header from '../Header';
-import DetailApplies from '../detail/DetailApplies';
+import Sidebar from './sidebar/Sidebar';
+import Header from './Header';
+import DetailApplies from './detail/DetailApplies';
 
 
 const Applies = () => {

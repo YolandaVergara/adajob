@@ -1,13 +1,13 @@
 import React, { useContext, useEffect } from 'react';
 import Apply from './Apply';
-import ProjectContext from '../../context/applies/applyContext';
+import ApplyContext from '../../../context/sidebar/applyContext';
 
 const List = () => {
 
     //Extraer proyectos del state inicial
-    const projectContext = useContext(ProjectContext);
-    const { applies, getApplies } = projectContext;
-    
+    const applyContext = useContext(ApplyContext);
+    const { applies, getApplies } = applyContext;
+    console.log(applies);
      
     //Obtener proyectos cuando carga el componente
     useEffect(() => {
