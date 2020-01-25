@@ -1,26 +1,26 @@
 import {
-  FORM_PROJECT,
-  GET_PROJECTS,
-  ADD_PROJECT
-} from '../../types/Index';
+  FORM_APPLY,
+  GET_APPLIES,
+  ADD_APPLY
+} from '../../types';
 
 
 export default (state, action) => {
   switch (action.type) {
-    case FORM_PROJECT:
+    case FORM_APPLY:
       return {
         ...state,
         form: true
       }
-    case GET_PROJECTS:
+    case GET_APPLIES:
       return {
         ...state,
-        projects: action.payload
+        applies: action.payload
       }
-    case ADD_PROJECT:
+    case ADD_APPLY:
       return {
         ...state,
-        projects: [...state.projects, action.payload]
+        applies: [...state.applies, action.payload]
       }
     default:
       return state;

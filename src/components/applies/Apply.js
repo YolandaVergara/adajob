@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Apply = ({project}) => {
+const Apply = ({apply}) => {
     return (
         <li>
             <button
                 type="button"
                 className="btn btn-blank"
             >
-                {project.name}
+                {apply.name}
             </button>
         </li>
     );

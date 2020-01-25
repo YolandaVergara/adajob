@@ -1,10 +1,10 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import Header from '../Header';
-import ListApplys from '../tasks/ListApplys';
+import DetailApplies from '../detail/DetailApplies';
 
 
-const Applys = () => {
+const Applies = () => {
   return (
     <div className="container-app">
       <Sidebar />
@@ -12,7 +12,7 @@ const Applys = () => {
         <Header />
         <main>
           <div className="container-tasks">
-            <ListApplys />
+            <DetailApplies />
 
           </div>
         </main>
@@ -22,4 +22,4 @@ const Applys = () => {
   );
 }
 
-export default Applys;
+export default Applies;

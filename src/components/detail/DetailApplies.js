@@ -3,8 +3,8 @@ import EditApply from './EditApply';
 import Table from 'react-bootstrap/Table'
 
 
-const ListApplys = () => {
-  const applys = [
+const DetailApplies = () => {
+  const applies = [
     {
       name: 'Nombre',
       contact: 'Contacto',
@@ -45,10 +45,10 @@ const ListApplys = () => {
       <Table striped className="justify-content-center font">
 
 
-        {applys.length === 0
+        {applies.length === 0
           ? (<th>No hay solicitudes</th>)
           :
-          applys.map(apply => (
+          applies.map(apply => (
             <tr>
               <EditApply
                 apply={apply}
@@ -67,4 +67,4 @@ const ListApplys = () => {
 
   );
 }
-export default ListApplys;
+export default DetailApplies;
